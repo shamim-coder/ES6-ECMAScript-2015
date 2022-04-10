@@ -25,7 +25,8 @@ const NFTStore = {
     storeCredits: 1000,
 };
 
-// const { name, userID, purchaseDate } = NFTStore.artPieces[0].ownerList[0];
+const { name, userID, purchaseDate } = NFTStore.artPieces[0].ownerList[0];
+
 const users = NFTStore.artPieces[0].ownerList.map((owner) => {
     const { userID, name } = owner;
     return { userID, name };
@@ -33,5 +34,4 @@ const users = NFTStore.artPieces[0].ownerList.map((owner) => {
 console.log(users);
 // const { pieceName, price, ownerList } = NFTStore.artPieces[1];
 
-// console.log(name, userID, purchaseDate);
-// console.log(pieceName, price, ownerList);
+console.log(name, userID, purchaseDate);
